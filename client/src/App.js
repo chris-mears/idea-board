@@ -11,13 +11,15 @@ class App extends Component {
       <Router>
         <div>
           <div>
-            <Link to='/login'>Login</Link>
+            <Link to='/'>Home</Link><span>&nbsp;&nbsp;</span>
+            <Link to='/login'>Login</Link><span>&nbsp;&nbsp;</span>
+            <Link to='/user'>Idea</Link><span>&nbsp;&nbsp;</span>
           </div>
           {/* Only ever shows one component at a tie with switch */}
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route exact path="/login" component={LogInPage}/>
-            <Route exact path="/user/:userId" component={IdeaPage}/>
+            <Route exact path="/user" component={IdeaPage}/>
           </Switch>
         </div>
       </Router>

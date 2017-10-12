@@ -4,7 +4,7 @@ class LogInPage extends Component {
     render() {
         return (
             <div>
-                Login Page
+                <h2>Login Page</h2>
             </div>
         );
     }

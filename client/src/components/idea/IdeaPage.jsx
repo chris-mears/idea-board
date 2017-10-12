@@ -4,7 +4,7 @@ class componentName extends Component {
     render() {
         return (
             <div>
-                Ideas Page
+                <h2>Ideas Page</h2>
             </div>
         );
     }
