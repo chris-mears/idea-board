@@ -16,7 +16,7 @@ const tesla = new Idea({
 const elon = new User({
   userName: 'elon_musk',
   password: 'spaceiscool',
-  ideas: [mars, tesla]
+  ideas: [mars, tesla, {}]
 })
 
 User.remove({})
