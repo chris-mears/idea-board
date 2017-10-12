@@ -13,7 +13,7 @@ const IdeaSchema = new Schema({
         type: String,
         default: "New Description"
     },
-    creatded: {
+    creatdedAt: {
         type: Date,
         default: Date.now
     }
@@ -31,10 +31,9 @@ const UserSchema = new Schema({
     ideas: [IdeaSchema]
 })
 
-const UserModel = mongoose.model('User', UserSchema)
-const IdeaModel = mongoose.model('Idea', IdeaSchema)
+const User = mongoose.model('User', UserSchema)
+const Idea = mongoose.model('Idea', IdeaSchema)
 
 module.exports = {
-    UserModel: UserModel,
-    IdeaModel: IdeaModel
+    User, Idea
 }
